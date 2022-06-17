@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:id="@+id/main_ui"
+    tools:openDrawer="start"
+    tools:context=".home_page">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:id="@+id/toolbar2"
+                    android:elevation="4dp"
+                    android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+                    app:popupTheme="@style/Theme.AppCompat.Light"
+                    >
+                    <TableLayout
+                        android:id="@+id/main_table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Amount"
+                                android:textColor="#070B5A"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Today"
+                                android:textColor="#070B5A"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Week"
+                                android:textColor="#070B5A"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Month"
+                                android:textColor="#070B5A"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Savings"
+                                android:textColor="#070B5A"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/budget_text"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0/-"
+                                android:textColor="#070B5A"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:id="@+id/today_text"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0/-"
+                                android:textColor="#070B5A"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:id="@+id/week_text"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0/-"
+                                android:textColor="#070B5A"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:id="@+id/month_text"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0/-"
+                                android:textColor="#070B5A"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:id="@+id/savings_text"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0/-"
+                                android:textColor="#070B5A"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+
+                    </TableLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/floating"
+                    app:fabSize="normal"
+                    android:backgroundTint="#7F79D8"
+                    android:src="@drawable/ic_sharp_plus_one_24"
+                    android:layout_margin="16dp"
+                    />
+            </RelativeLayout>
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#082797"
+            app:title="Silver Tracker"
+            app:titleTextColor="#fff" />
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_bar"
+
+        app:menu="@menu/navigationbar"
+        app:headerLayout="@layout/nav_layout"
+        android:layout_gravity="start"/>
+
+
+
+       
+
+</androidx.drawerlayout.widget.DrawerLayout>

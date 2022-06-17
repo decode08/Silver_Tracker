@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "775102966928",
+    "project_id": "silver-tracker",
+    "storage_bucket": "silver-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775102966928:android:c303c12cf87db7d65b7c15",
+        "android_client_info": {
+          "package_name": "com.example.silver_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775102966928-r9nnbdpausgh8voo6n77opechst7m89e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs7j2Hf0WVgHGsc3XpYj2DJ2gwONGZNOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775102966928-r9nnbdpausgh8voo6n77opechst7m89e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
